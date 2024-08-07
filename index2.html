@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl" >
+<head> 
+    <meta charset="utf-8"/>
+
+    <script type="text/javascript">
+
+        function sprawdz()
+        {
+            var liczba = document.getElementById("pole").value;
+      
+
+            if(liczba > 0) document.getElementById("wynik").innerHTML="dodatnie";
+            else if(liczba<0) document.getElementById("wynik").innerHTML = "ujemne";
+            else if(liczba==0) document.getElementById("wynik").innerHTML = "zero";
+            else document.getElementById("wynik").innerHTML = "to nie jest liczba";
+
+        }
+
+    </script>
+    <title> Odlicznie czasu</title> 
+</head>
+
+<body>
+
+    <input type ="text" id="pole" />
+    <input type="submit" value = "Sprawdz" onclick="sprawdz()" />
+
+
+	
+	<div id="wynik"></div>
+    </div>
+</body>
+
+</html>
